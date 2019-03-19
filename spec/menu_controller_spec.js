@@ -18,4 +18,11 @@ describe("MenuController", () => {
 			expect(this.menu.getContactCount()).toBe(1)
 		});
 	});
+
+	describe("#remindMe()", () => {
+
+		it("should return a string", () => {
+			expect(typeof this.menu.remindMe()).toBe('string');
+		});
+	})
 });
